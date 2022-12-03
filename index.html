@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta http-equiv="Content-Script-Type" content="text/javascript">
+    <link rel = "stylesheet" href = "index.css">
+    <title>卒業研究アンケート</title>
+    <script type = "text/javascript">
+    
+        var mylink = new Array(
+            "https://docs.google.com/forms/d/e/1FAIpQLSeazEIH1ltkcFen_peCrf4rsgenC5JjcpMgcfM9ZK6Qd7jEEw/viewform?usp=sf_link",
+            "https://docs.google.com/forms/d/e/1FAIpQLSc7rt6qANKL_LTpFHLkR7XNDV7Kg6ugWePKdGsoL-sYuzbTDg/viewform?usp=sf_link",
+            "https://docs.google.com/forms/d/e/1FAIpQLScFkFbK6L8zH08jIYsNK5xCRu89zdufW4Jq3vseMeKBfVdTLQ/viewform?usp=sf_link",
+            "https://docs.google.com/forms/d/e/1FAIpQLScS0_sp2L91ZvDn6l392CmWcm9BvUAV1BNdlOuXdorvwLfjpg/viewform?usp=sf_link",
+            "https://docs.google.com/forms/d/e/1FAIpQLScTRuhoG1-LBZPd165PZJNnhzqiVhlgj-hp23yW3QidCI_nZQ/viewform?usp=sf_link",
+            "https://docs.google.com/forms/d/e/1FAIpQLSdbGhR6OPgxYfgO8dXQNb5JhgfNEdXs_3PyKudBIQOBwmtx0A/viewform?usp=sf_link",
+            "https://docs.google.com/forms/d/e/1FAIpQLSf1N3auqwdNBN8Cus5Z6epY9oYkQSUme4sSJ2RAgLOxfOL-Pw/viewform?usp=sf_link",
+            "https://docs.google.com/forms/d/e/1FAIpQLSdPA8dmzr66C52zese88BdsJItV5wlyE5j3KKxnSSsT-0z-sA/viewform?usp=sf_link",
+            "https://docs.google.com/forms/d/e/1FAIpQLSdr8c5sDgxXrfbW2x3F2zLoM13chHL2YEAsP4KZb7IAuEIeWg/viewform?usp=sf_link"
+
+        );
+        function random_jump() {
+            var i = Math.floor(Math.random() * mylink.length);
+            location.href = mylink[i];
+        }
+    </script>
+</head>
+<body>
+    <main>
+        <div class = "title">
+            <h1>卒業研究アンケート</h1>
+        </div>
+        <div class = "evaluation">
+            <h2>※必読※</h2>
+            <p>
+                このアンケートは、就職、選挙、講座に関する３つの分野の質問で構成されています。
+                ただ、研究の都合上一人２分野、もしくは１分野のみご回答してもらいます。
+                分野の選択はランダムに振り分けられるため、選ぶことは出来かねますので、ご了承ください。
+                所要時間は10分程度です。
+            </p>
+        </div>
+        <div class = "name">
+            <div class = "namemini">
+                <p>【研究員】</p>
+                <p>&nbsp;水野  幸太</p>
+                <p>&nbsp;山本  陸</p>
+            </div>
+        </div>
+        <div class = "start">
+            <a href = "javascript:random_jump();" class = "button">スタート</a>
+        </div>
+
+    </main>
+    
+</body>
+</html>
